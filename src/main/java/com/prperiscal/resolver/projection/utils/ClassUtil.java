@@ -18,6 +18,7 @@ public final class ClassUtil {
      * <p>Method to retrieve a class object through the given class name.
      *
      * @param className The full class name
+     *
      * @return class <code><? extends Projection></code>
      * @since 1.0.0
      */
@@ -34,10 +35,11 @@ public final class ClassUtil {
      * <p>Converts a full class name into a single base name.
      *
      * @param fullClassName The full class name, including package information
+     *
      * @return String the base class name
      * @since 1.0.0
      */
-    public static String removePackage(String fullClassName){
+    public static String removePackage(String fullClassName) {
         return fullClassName.substring(fullClassName.lastIndexOf('.') + 1);
     }
 
