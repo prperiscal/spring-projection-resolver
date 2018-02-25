@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.Validate;
+import org.springframework.lang.Nullable;
 
 /**
  * <p>Resolver for registered projections.
@@ -24,8 +25,10 @@ public class ProjectionResolver {
      * @return Optional of the Projection class
      * @since 1.0.0
      */
-    public Optional<Class<? extends Projection>> resolve(String projectionName) {
-        Validate.notEmpty(projectionName, "The validated projectionName attribute is empty!");
+    public Optional<Class<? extends Projection>> resolve(@Nullable String projectionName) {
+        if(projectionName == null){
+            return Optional.empty();
+        }
 
         return Optional.ofNullable(projectionMap.get(projectionName));
     }
@@ -41,9 +44,11 @@ public class ProjectionResolver {
      * @return Optional of the Projection class
      * @since 1.0.0
      */
-    public Optional<Class<? extends Projection>> resolve(Class<?> sourceType, String projectionName) {
+    public Optional<Class<? extends Projection>> resolve(Class<?> sourceType, @Nullable String projectionName) {
         Validate.notNull(sourceType, "The validated sourceType attribute is null!");
-        Validate.notEmpty(projectionName, "The validated projectionName attribute is empty!");
+        if(projectionName == null){
+            return Optional.empty();
+        }
 
         return Optional.ofNullable(projectionMap.get(getFullClassName(sourceType, projectionName)));
     }
