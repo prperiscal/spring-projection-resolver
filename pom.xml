@@ -67,13 +67,6 @@
 	</dependencyManagement>
 
 	<build>
-		<extensions>
-			<extension>
-				<groupId>io.packagecloud.maven.wagon</groupId>
-				<artifactId>maven-packagecloud-wagon</artifactId>
-				<version>0.0.6</version>
-			</extension>
-		</extensions>
 	</build>
 
 	<repositories>
@@ -113,16 +106,5 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
-	<distributionManagement>
-		<repository>
-			<id>prperiscal-repo</id>
-			<url>packagecloud+https://packagecloud.io/Pablo/spring-projection-resolver</url>
-		</repository>
-		<snapshotRepository>
-			<id>prperiscal-repo</id>
-			<url>packagecloud+https://packagecloud.io/Pablo/spring-projection-resolver</url>
-		</snapshotRepository>
-	</distributionManagement>
 
 </project>
