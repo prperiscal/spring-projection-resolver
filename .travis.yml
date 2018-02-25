@@ -11,11 +11,7 @@ deploy:
  script: "cp .travis.settings.xml $HOME/.m2/settings.xml && mvn deploy"
  skip_cleanup: true
  on:
-   branch: master
-
-deploy:
-  provider: script
-  script: "cp .travis.settings.xml $HOME/.m2/settings.xml && mvn deploy"
-  skip_cleanup: true
-  on:
-    branch: stable
+   branches:
+     only:
+       - master
+       - stable
