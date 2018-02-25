@@ -107,4 +107,15 @@
 		</pluginRepository>
 	</pluginRepositories>
 
+    <distributionManagement>
+        <repository>
+            <id>prperiscal-repo</id>
+            <url>packagecloud+https://packagecloud.io/Pablo/spring-projection-resolver</url>
+        </repository>
+        <snapshotRepository>
+            <id>prperiscal-repo</id>
+            <url>packagecloud+https://packagecloud.io/Pablo/spring-projection-resolver</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>
