@@ -67,8 +67,6 @@
 	</dependencyManagement>
 
 	<build>
-		<plugins>
-		</plugins>
 		<extensions>
 			<extension>
 				<groupId>io.packagecloud.maven.wagon</groupId>
