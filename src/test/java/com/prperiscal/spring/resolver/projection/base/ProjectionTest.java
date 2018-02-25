@@ -1,4 +1,4 @@
-package com.prperiscal.resolver.projection.base;
+package com.prperiscal.spring.resolver.projection.base;
 
 /**
  * @author <a href="mailto:prperiscal@gmail.com">Pablo Rey Periscal</a>

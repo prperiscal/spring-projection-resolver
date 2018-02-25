@@ -1,4 +1,4 @@
-package com.prperiscal.resolver.projection.base;
+package com.prperiscal.spring.resolver.projection.base;
 
 /**
  * <p>Interface for projections.

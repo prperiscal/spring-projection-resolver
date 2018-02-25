@@ -1,6 +1,6 @@
-package com.prperiscal.resolver.projection;
+package com.prperiscal.spring.resolver.projection;
 
-import com.prperiscal.resolver.projection.base.Projection;
+import com.prperiscal.spring.resolver.projection.base.Projection;
 
 /**
  * @author <a href="mailto:prperiscal@gmail.com">Pablo Rey Periscal</a>

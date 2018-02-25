@@ -1,8 +1,8 @@
-package com.prperiscal.resolver.projection.utils;
+package com.prperiscal.spring.resolver.projection.utils;
 
 import static lombok.AccessLevel.PRIVATE;
 
-import com.prperiscal.resolver.projection.base.Projection;
+import com.prperiscal.spring.resolver.projection.base.Projection;
 import lombok.NoArgsConstructor;
 
 /**

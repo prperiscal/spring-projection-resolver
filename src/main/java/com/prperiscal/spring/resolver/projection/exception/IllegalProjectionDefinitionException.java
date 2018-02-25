@@ -1,4 +1,4 @@
-package com.prperiscal.resolver.projection.exception;
+package com.prperiscal.spring.resolver.projection.exception;
 
 /**
  * <p> Signals that a projection is invalid or duplicated

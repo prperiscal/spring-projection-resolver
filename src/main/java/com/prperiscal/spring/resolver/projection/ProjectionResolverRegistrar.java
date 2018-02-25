@@ -1,4 +1,4 @@
-package com.prperiscal.resolver.projection;
+package com.prperiscal.spring.resolver.projection;
 
 import static java.util.stream.Collectors.toMap;
 
@@ -7,10 +7,10 @@ import java.util.Map;
 import java.util.Set;
 
 import com.google.common.collect.Sets;
-import com.prperiscal.resolver.projection.base.Projection;
-import com.prperiscal.resolver.projection.base.ProjectionResolver;
-import com.prperiscal.resolver.projection.exception.IllegalProjectionDefinitionException;
-import com.prperiscal.resolver.projection.utils.ClassUtil;
+import com.prperiscal.spring.resolver.projection.base.Projection;
+import com.prperiscal.spring.resolver.projection.base.ProjectionResolver;
+import com.prperiscal.spring.resolver.projection.exception.IllegalProjectionDefinitionException;
+import com.prperiscal.spring.resolver.projection.utils.ClassUtil;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.BeanDefinitionHolder;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;

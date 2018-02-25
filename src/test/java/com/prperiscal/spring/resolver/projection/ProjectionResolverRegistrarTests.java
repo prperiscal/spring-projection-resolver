@@ -1,13 +1,13 @@
-package com.prperiscal.resolver.projection;
+package com.prperiscal.spring.resolver.projection;
 
 import static org.mockito.internal.util.collections.Sets.newSet;
 
 import java.util.Map;
 
 import com.google.common.collect.Maps;
-import com.prperiscal.resolver.projection.base.Projection;
-import com.prperiscal.resolver.projection.base.ProjectionResolver;
-import com.prperiscal.resolver.projection.exception.IllegalProjectionDefinitionException;
+import com.prperiscal.spring.resolver.projection.base.Projection;
+import com.prperiscal.spring.resolver.projection.base.ProjectionResolver;
+import com.prperiscal.spring.resolver.projection.exception.IllegalProjectionDefinitionException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -50,7 +50,7 @@ public class ProjectionResolverRegistrarTests {
         ProjectionResolverRegistrar projectionResolverRegistrar = new ProjectionResolverRegistrar();
         projectionResolverRegistrar.registerProjections(beanDefinitionRegistry,
                                                         newSet(ProjectionTest.class.getCanonicalName(),
-                                                               com.prperiscal.resolver.projection.base.ProjectionTest.class
+                                                               com.prperiscal.spring.resolver.projection.base.ProjectionTest.class
                                                                        .getCanonicalName()));
     }
 

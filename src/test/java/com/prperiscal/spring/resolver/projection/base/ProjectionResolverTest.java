@@ -1,4 +1,4 @@
-package com.prperiscal.resolver.projection.base;
+package com.prperiscal.spring.resolver.projection.base;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

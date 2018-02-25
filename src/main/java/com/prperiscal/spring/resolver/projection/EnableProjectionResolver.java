@@ -1,4 +1,4 @@
-package com.prperiscal.resolver.projection;
+package com.prperiscal.spring.resolver.projection;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -6,7 +6,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import com.prperiscal.resolver.projection.base.Projection;
+import com.prperiscal.spring.resolver.projection.base.Projection;
 import org.springframework.context.annotation.Import;
 
 /**
