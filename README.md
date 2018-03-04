@@ -74,7 +74,7 @@ final Class<? extends Projection> targetType = projectionResolver.resolve(User.c
                 UserBase.class);
 ```
 
-Projections can also be resolved by his short name. For example, a projection for _User_ called _UserWithGroups_ can be resolved by:
+Projections can also be resolved by their short name. For example, a projection for _User_ called _UserWithGroups_ can be resolved by:
 
 ```
 final Class<UserWithGroups> targetType = projectionResolver.resolve(User.class, "WithGroups").orElse(
