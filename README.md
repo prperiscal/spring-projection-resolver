@@ -2,17 +2,17 @@
 
 # Spring Projection Resolver
 
-##Overview
+## Overview
 Spring module to facilitate resolving projections by name. Offers a ProjectionResolver bean which can be injected in any object to resolve any projection available in the spring scope.
 
 
 
-###What is a projection
+### What is a projection
 Projections are a way for a client to request only specific fields from an object instead of the entire object. Using projections when you only need a few fields from an object is a good way to self-document your code, reduce payload of responses, and even allow the server to relax an otherwise time consuming computation or IO operation. You can read more on the motivation on [projections](https://github.com/linkedin/rest.li/wiki/Projections)
 
 Therefore a projection will be, somehow, related with a more general model object. The purpose of this module is to retrieve, in a elegant and easy way, a projection by the name and the associated model object.
 
-##Getting Started
+## Getting Started
 * In a Maven .pom file:
 ```
 <dependency>
@@ -51,7 +51,7 @@ repositories {
 }
 ```
 
-##How to use it
+## How to use it
 
 * Any projection which wants to be resolve has to implement the 'Projection' interface on this module (com.prperiscal.spring.resolver.projection.base)
 
